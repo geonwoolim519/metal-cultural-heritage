@@ -1,0 +1,6 @@
+정보.txt
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/

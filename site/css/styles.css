@@ -1,0 +1,250 @@
+:root {
+  --void: #0a0907;
+  --ink: #12100c;
+  --panel: #1a1712;
+  --line: rgba(198, 163, 91, 0.28);
+  --gold: #c6a35b;
+  --gold-soft: #e6d3a3;
+  --bronze: #8a5a32;
+  --gilt: #d4af67;
+  --patina: #6f8a78;
+  --paper: #f3ead8;
+  --muted: #b7ad97;
+  --danger: #c46a4a;
+  --max: 1120px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background:
+    radial-gradient(1200px 500px at 10% -10%, rgba(198, 163, 91, 0.08), transparent 55%),
+    linear-gradient(180deg, #0c0b09, var(--void) 30%);
+  color: var(--paper);
+  font-family: "Pretendard", "IBM Plex Sans KR", "Noto Sans KR", sans-serif;
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 6vw;
+  border-bottom: 1px solid var(--line);
+  background: rgba(10, 9, 7, 0.86);
+  backdrop-filter: blur(16px);
+}
+.brand {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.18em;
+}
+.brand small {
+  color: var(--gold);
+  font-size: 0.62rem;
+}
+.brand strong {
+  font-family: "Song Myung", "Noto Serif KR", serif;
+  font-size: 1.05rem;
+  letter-spacing: 0.12em;
+}
+nav { display: flex; gap: 1.4rem; flex-wrap: wrap; }
+nav a {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+nav a:hover, nav a.active { color: var(--gold-soft); }
+
+.hero, .wrap, footer {
+  width: min(var(--max), 92vw);
+  margin: 0 auto;
+}
+.hero {
+  padding: 5.5rem 0 3.5rem;
+}
+.kicker {
+  color: var(--gold);
+  letter-spacing: 0.28em;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+}
+h1, h2, h3 {
+  font-family: "Song Myung", "Noto Serif KR", serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+.hero h1 {
+  font-size: clamp(2.4rem, 7vw, 5.4rem);
+  line-height: 1.12;
+  margin: 0.6rem 0 1.2rem;
+}
+.lede {
+  max-width: 40rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.metal-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.7rem;
+  margin: 2.8rem 0 1rem;
+}
+.metal-card {
+  border: 1px solid var(--line);
+  padding: 1rem 0.9rem 0.85rem;
+  min-height: 7.2rem;
+  background: var(--ink);
+}
+.metal-card span {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--gold);
+  letter-spacing: 0.16em;
+}
+.metal-card b {
+  display: block;
+  margin-top: 0.55rem;
+  font-size: 1.15rem;
+  font-family: "Song Myung", serif;
+}
+.swatch {
+  height: 8px;
+  margin-top: 1rem;
+}
+.swatch.gold { background: linear-gradient(90deg, #7a5a22, #f3e2a8, #b8893a); }
+.swatch.gilt { background: linear-gradient(90deg, #5a3a18, #d7b056, #8a5a28); }
+.swatch.bronze { background: linear-gradient(90deg, #3d2a18, #8a5a32, #2f4a3d); }
+.swatch.inlay { background: linear-gradient(90deg, #2b2418, #cfc7b6, #6b4a2a); }
+.swatch.bell { background: linear-gradient(90deg, #24180f, #70502c, #9a7a48); }
+
+.section { padding: 2.5rem 0 4rem; }
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+}
+.rule {
+  width: 4.5rem;
+  height: 1px;
+  background: var(--gold);
+  margin: 0 0 1.6rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.card {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  min-height: 180px;
+  overflow: hidden;
+}
+.card:hover { border-color: var(--gold); }
+.plate {
+  position: relative;
+  min-height: 180px;
+}
+.plate::after {
+  content: attr(data-metal);
+  position: absolute;
+  left: 0.8rem;
+  bottom: 0.7rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  color: rgba(243, 234, 216, 0.8);
+}
+.plate.gold { background: radial-gradient(circle at 30% 20%, #f4e2a6, #9a7228 55%, #3b2a10); }
+.plate.gilt { background: radial-gradient(circle at 20% 10%, #efd27a, #8d5a24 58%, #1f1610); }
+.plate.bronze { background: radial-gradient(circle at 40% 30%, #b07a45, #5a3820 60%, #1c2a24); }
+.plate.inlay { background:
+  linear-gradient(180deg, rgba(220,220,220,0.18), transparent 40%),
+  radial-gradient(circle at 30% 20%, #8d6a3d, #2b2116 70%); }
+.card-body { padding: 1.1rem 1.15rem; }
+.card-body em {
+  color: var(--gold);
+  font-style: normal;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+}
+.card-body h3 {
+  margin: 0.25rem 0 0.4rem;
+  font-size: 1.25rem;
+}
+.card-body p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.note {
+  border: 1px solid var(--line);
+  padding: 1rem 1.1rem;
+  color: var(--muted);
+  background: rgba(198, 163, 91, 0.05);
+  margin-top: 1.5rem;
+}
+
+.meta-grid, .split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.meta-item, .block {
+  border: 1px solid var(--line);
+  background: var(--ink);
+  padding: 1rem 1.1rem;
+}
+.meta-item dt, .block span {
+  color: var(--gold);
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+}
+.meta-item dd {
+  margin: 0.25rem 0 0;
+  font-size: 1.02rem;
+}
+.quote {
+  font-family: "Song Myung", serif;
+  font-size: clamp(1.4rem, 3vw, 2.1rem);
+  line-height: 1.45;
+  margin: 2rem 0;
+  color: var(--gold-soft);
+}
+.list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+}
+footer {
+  padding: 2.5rem 0 3.5rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--line);
+  margin-top: 2rem;
+}
+
+.compare {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 860px) {
+  .metal-row, .grid, .meta-grid, .split, .compare, .card {
+    grid-template-columns: 1fr;
+  }
+  nav { gap: 0.8rem; }
+}
