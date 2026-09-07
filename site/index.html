@@ -3,34 +3,66 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>금속문화재 · 재료가 다르면, 보존도 다르다</title>
+    <title>금속문화재 · Our Metal Heritage</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&family=Song+Myung&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <section class="hero">
-      <p class="kicker">Metal Cultural Heritage</p>
-      <h1>재료가 다르면<br>보존도 다르다</h1>
-      <p class="lede">
-        디지털헤리티지큐레이터 양성과정, 문화재재료학 및 실험에서 출발한 웹전시입니다.
-        금속문화재 8점을 금, 금동, 청동, 은입사, 대형 주조의 순서로 비교합니다.
-      </p>
-      <div class="metal-row">
-        <div class="metal-card"><span>01</span><b>금</b><div class="swatch gold"></div></div>
-        <div class="metal-card"><span>02</span><b>금동</b><div class="swatch gilt"></div></div>
-        <div class="metal-card"><span>03</span><b>청동</b><div class="swatch bronze"></div></div>
-        <div class="metal-card"><span>04</span><b>은입사</b><div class="swatch inlay"></div></div>
-        <div class="metal-card"><span>05</span><b>대형 주조</b><div class="swatch bell"></div></div>
+    <header class="header">
+      <a class="brand" href="#home">
+        <svg class="mark" viewBox="0 0 34 34" aria-hidden="true">
+          <path d="M6 24c8-14 14-14 22 0" fill="none" stroke="#7a5cff" stroke-width="2.4" />
+          <path d="M6 24c8-9 14-9 22 0" fill="none" stroke="#3aa0ff" stroke-width="2.4" />
+          <circle cx="17" cy="22" r="3.2" fill="#e2a13a" />
+        </svg>
+        <span class="brand-text">
+          <b>금속문화재</b>
+          <small>METAL CULTURAL HERITAGE</small>
+        </span>
+      </a>
+      <nav class="nav">
+        <button data-metal="" class="is-on">홈</button>
+        <button data-metal="gold">금</button>
+        <button data-metal="gilt">금동</button>
+        <button data-metal="bronze">청동</button>
+        <button data-metal="silver">은</button>
+        <button data-metal="iron">철</button>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="collage" aria-hidden="true">
+        <img src="./images/hwangnam-crown.jpg" alt="" />
+        <img src="./images/seongdeok-bell.jpg" alt="" />
+        <img src="./images/baekje-incense.jpg" alt="" />
+        <img src="./images/bangasayusang.jpg" alt="" />
+        <img src="./images/cheonma-gwanmo.jpg" alt="" />
+        <img src="./images/jeongji-armor.jpg" alt="" />
+        <img src="./images/hwasun-daegok.jpg" alt="" />
+        <img src="./images/jeongbyeong.jpg" alt="" />
+      </div>
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <h1>Our Metal Heritage</h1>
+        <p>재료가 다르면, 보존도 다르다 · 디지털헤리티지큐레이터 양성과정</p>
       </div>
     </section>
-    <section class="section wrap">
-      <h2>전시 유물 8점</h2>
-      <div class="rule"></div>
-      <div class="grid" data-artifact-list></div>
-      <p class="note">정확한 합금비는 공개된 과학적 분석자료가 있을 때만 수치로 표시합니다. 일반적인 청동 조성값을 이 유물의 성분인 것처럼 쓰지 않습니다.</p>
+
+    <section class="stage" id="gallery">
+      <div class="gallery-wrap">
+        <div class="gallery-head">
+          <h2 data-gallery-title>전체</h2>
+          <span data-gallery-count></span>
+        </div>
+        <div class="masonry" data-masonry></div>
+      </div>
+      <aside class="preview" data-preview>
+        <div class="preview-empty">유물을 선택하면 오른쪽에 사진과 재료·보존 정보가 열립니다.</div>
+      </aside>
     </section>
+
     <script src="./js/data.js"></script>
     <script src="./js/app.js"></script>
   </body>

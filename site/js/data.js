@@ -7,6 +7,8 @@ window.EXHIBITION = {
     {
       id: "hwangnam-crown",
       no: "01",
+      image: "./images/hwangnam-crown.jpg",
+      metals: ["gold"],
       name: "황남대총 북분 금관",
       era: "신라",
       period: "5세기 후반~6세기 전반경",
@@ -60,6 +62,8 @@ window.EXHIBITION = {
     {
       id: "sinmyo-buddha",
       no: "02",
+      image: "./images/sinmyo-buddha.jpg",
+      metals: ["gilt"],
       name: "금동신묘명삼존불입상",
       era: "삼국시대",
       period: "6세기",
@@ -112,6 +116,8 @@ window.EXHIBITION = {
     {
       id: "bangasayusang",
       no: "03",
+      image: "./images/bangasayusang.jpg",
+      metals: ["gilt"],
       name: "금동미륵보살반가사유상",
       era: "삼국시대",
       period: "7세기 전반",
@@ -164,6 +170,8 @@ window.EXHIBITION = {
     {
       id: "jeongbyeong",
       no: "04",
+      image: "./images/jeongbyeong.jpg",
+      metals: ["bronze", "silver"],
       name: "청동 은입사 포류수금문 정병",
       era: "고려",
       period: "고려시대",
@@ -219,6 +227,8 @@ window.EXHIBITION = {
     {
       id: "seongdeok-bell",
       no: "05",
+      image: "./images/seongdeok-bell.jpg",
+      metals: ["bronze"],
       name: "성덕대왕신종",
       era: "통일신라",
       period: "771년 완성",
@@ -271,6 +281,8 @@ window.EXHIBITION = {
     {
       id: "cheonma-belt",
       no: "06",
+      image: "./images/cheonma-belt.jpg",
+      metals: ["gold"],
       name: "천마총 금제 허리띠",
       era: "신라",
       period: "신라",
@@ -324,6 +336,8 @@ window.EXHIBITION = {
     {
       id: "cheonma-gwanmo",
       no: "07",
+      image: "./images/cheonma-gwanmo.jpg",
+      metals: ["gold"],
       name: "천마총 관모",
       era: "신라",
       period: "6세기 전반경",
@@ -376,6 +390,8 @@ window.EXHIBITION = {
     {
       id: "cheonma-crown",
       no: "08",
+      image: "./images/cheonma-crown.jpg",
+      metals: ["gold"],
       name: "천마총 금관",
       era: "신라",
       period: "6세기 전반경",
@@ -425,6 +441,474 @@ window.EXHIBITION = {
         "금제 유물군(금관·관모·허리띠)을 비교하면 같은 재료의 다른 손상 유형을 볼 수 있음"
       ],
       sentence: "금관은 금이라는 금속의 아름다움뿐 아니라, 금을 얇은 판으로 가공하고 조립한 고대 금속공예 기술의 결과물이다."
+    },
+    {
+      id: "muryeong-bracelet",
+      no: "09",
+      image: "./images/muryeong-bracelet.jpg",
+      metals: ["silver"],
+      name: "무령왕비 은팔찌",
+      era: "백제",
+      period: "6세기",
+      designation: "국보",
+      origin: "공주 무령왕릉",
+      collection: "국립공주박물관",
+      material: "은",
+      materialClass: "silver",
+      materialLabel: "Ag",
+      use: "왕비의 장신구",
+      size: "—",
+      summary: "무령왕릉에서 출토된 은제 팔찌. 바깥에 용문을 돋을새김하고 안쪽에 명문이 있다.",
+      elements: {
+        primary: "은(Ag)",
+        alloy: "고대 은제품에는 구리 등이 포함될 수 있으나, 이 유물의 정확한 합금비는 공개된 분석자료를 기준으로 해야 함",
+        surface: "돋을새김 장식, 내면 명문",
+        analysis: "은 본체. 성분 수치는 확인된 분석값이 있을 때만 표기함"
+      },
+      properties: [
+        "은은 전성과 연성이 좋아 장신구 성형에 적합",
+        "금보다 화학적으로 덜 안정적이어서 황화물 환경에서 변색될 수 있음",
+        "표면 광택과 명문 가독성이 보존 상태와 직결됨"
+      ],
+      metallurgy: [
+        "금과 달리 은은 녹슬지 않아도 검게 변할 수 있음",
+        "장식 돋을새김은 은의 가공성을 이용한 기법"
+      ],
+      techniques: ["성형", "돋을새김", "명문 새김"],
+      making: [
+        "은으로 팔찌 형태를 만들고 바깥면에 용문을 돋을새김한 것으로 알려져 있음",
+        "내면에는 제작·소장을 알려 주는 명문이 새겨져 있음"
+      ],
+      background: [
+        "백제 무령왕릉 왕비 관련 장신구",
+        "왕릉 출토 금속공예와 명문 자료를 함께 보여 주는 유물"
+      ],
+      surface: [
+        "은 특유의 변색(황화은) 가능성이 있음",
+        "돋을새김과 명문이 마모되면 정보가 줄어듦"
+      ],
+      conservation: [
+        "금제 유물과 달리 변색·오염 관리가 중요",
+        "과도한 광택 처리는 명문과 문양을 손상시킬 수 있음",
+        "황화합물과 습기 환경을 낮추는 전시가 필요"
+      ],
+      sentence: "은은 금처럼 영원하지 않다. 같은 장신구라도 금속이 바뀌면 변색과 보존의 길이 달라진다."
+    },
+    {
+      id: "baekje-incense",
+      no: "10",
+      image: "./images/baekje-incense.jpg",
+      metals: ["gilt"],
+      name: "백제 금동대향로",
+      era: "백제",
+      period: "6~7세기경",
+      designation: "국보",
+      origin: "부여 능산리 절터",
+      collection: "국립부여박물관",
+      material: "금동",
+      materialClass: "gilt",
+      materialLabel: "Cu + Au",
+      use: "불교 의례용 향로",
+      size: "—",
+      summary: "용 받침, 연꽃 몸체, 산악 뚜껑, 봉황 꼭지가 한 몸으로 이어진 백제 금동 향로.",
+      elements: {
+        primary: "구리계 합금 본체",
+        alloy: "정확한 Cu-Sn-Pb 비율은 이 유물의 과학적 분석자료를 통해 확인해야 함",
+        surface: "금(Au) 도금",
+        analysis: "금으로 만든 향로가 아니라 동합금에 금을 입힌 금동 향로"
+      },
+      properties: [
+        "복잡한 입체 형태를 주조로 구현하기에 동합금이 적합",
+        "얇은 금도금층이 색과 장엄함을 담당",
+        "도금이 닳으면 내부 금속이 드러날 수 있음"
+      ],
+      metallurgy: [
+        "금동은 구조(동합금)와 표면(금)이 다른 복합 재료",
+        "향로의 세부 산수·인물 표현은 정밀 주조 기술의 결과"
+      ],
+      techniques: ["주조", "도금", "조립"],
+      making: [
+        "받침·몸체·뚜껑 등 여러 부분을 정밀 주조해 결합한 구조로 알려져 있음",
+        "표면에 금을 입혀 금동 향로로 완성"
+      ],
+      background: [
+        "백제 왕실 불교 의례와 관련된 공양구",
+        "부여 능산리 절터에서 발견되어 백제 금속공예의 대표작으로 평가됨"
+      ],
+      surface: [
+        "금도금층과 동합금 본체의 상태를 함께 봐야 함",
+        "돌출된 봉황·산악 장식은 충격에 약할 수 있음"
+      ],
+      conservation: [
+        "도금 박락과 동합금 부식을 동시에 관리",
+        "입체 장식의 물리적 파손을 막는 지지가 중요",
+        "습기와 오염물질이 내부 금속에 도달하지 않도록 함"
+      ],
+      sentence: "백제 금동대향로는 녹인 금속으로 산을 세우고, 그 위에 금을 입혀 향을 피운 복합 금속문화재다."
+    },
+    {
+      id: "jeongji-armor",
+      no: "11",
+      image: "./images/jeongji-armor.jpg",
+      metals: ["iron"],
+      name: "정지장군 갑옷",
+      era: "고려",
+      period: "고려 후기",
+      designation: "—",
+      origin: "—",
+      collection: "—",
+      material: "철",
+      materialClass: "iron",
+      materialLabel: "Fe",
+      use: "무장의 갑옷",
+      size: "—",
+      summary: "철제 찰갑 형태의 갑옷. 금·청동 유물과 달리 철의 부식 특성이 보존의 핵심이다.",
+      elements: {
+        primary: "철(Fe)",
+        alloy: "철제 갑옷에는 탄소 등이 포함될 수 있으나, 이 유물의 정확한 조성은 분석자료가 필요함",
+        surface: "철 부식층, 찰갑 연결부",
+        analysis: "성분 수치는 확인된 분석값이 없어 표기하지 않음"
+      },
+      properties: [
+        "철은 단단하여 방어구 재료로 쓰임",
+        "습기·염화물 환경에서 부식이 매우 빠름",
+        "금이나 청동보다 금속 본체의 손실 위험이 큼"
+      ],
+      metallurgy: [
+        "같은 금속문화재라도 철은 보존 우선순위가 완전히 다름",
+        "찰갑의 작은 철편과 연결부가 부식에 취약"
+      ],
+      techniques: ["단야", "찰갑 조립"],
+      making: [
+        "철판을 잘라 찰갑 형태로 연결한 구조로 보임",
+        "세부 제작법은 추가 조사가 필요함"
+      ],
+      background: [
+        "고려 정지 장군과 관련된 갑옷으로 전함",
+        "실전용 무구로서 장신구·불상과 재료 선택이 다름"
+      ],
+      surface: [
+        "적갈색 녹과 층상 박락이 관찰될 수 있음",
+        "연결 구멍과 가장자리가 먼저 약해질 수 있음"
+      ],
+      conservation: [
+        "금제 유물의 취급법으로 철 갑옷을 다루면 안 됨",
+        "습도 하한 관리, 염화물 제거, 안정화 처리가 핵심",
+        "물리적인 힘보다 내부 부식의 진행을 막는 것이 우선"
+      ],
+      sentence: "철은 무기를 만들 수 있었지만, 땅 속에서는 가장 먼저 스스로를 잃는 금속이기도 하다."
+    },
+    {
+      id: "jija-chongtong",
+      no: "12",
+      image: "./images/jija-chongtong.jpg",
+      metals: ["bronze"],
+      name: "지자총통",
+      era: "조선",
+      period: "조선시대",
+      designation: "—",
+      origin: "—",
+      collection: "—",
+      material: "청동",
+      materialClass: "bronze",
+      materialLabel: "Cu",
+      use: "화포",
+      size: "—",
+      summary: "조선의 지자총통. 천·지·현·황 화포 계열의 주조 화기.",
+      elements: {
+        primary: "구리계 합금(청동)으로 알려져 있음",
+        alloy: "정확한 합금비는 이 유물의 분석자료가 확인된 경우에만 수치로 표기함",
+        surface: "주조 표면, 약실과 포구",
+        analysis: "주조 화기로 이해되며 성분 수치는 추정하지 않음"
+      },
+      properties: [
+        "청동은 주조성이 좋아 원통형 화포를 만들기에 적합",
+        "발사 시의 압력과 열을 견디는 두께 설계가 중요",
+        "철 화기보다 부식 양상이 다름"
+      ],
+      metallurgy: [
+        "금속을 녹여 속이 빈 원통을 만드는 주조 기술",
+        "무기로서의 기능과 합금의 기계적 성질이 연결됨"
+      ],
+      techniques: ["주조"],
+      making: [
+        "청동을 주조해 약실과 포신을 일체로 만든 형태로 알려져 있음",
+        "세부 제작법은 유물별 조사가 필요함"
+      ],
+      background: [
+        "조선 화포 체계에서 지자총통은 중형 화기에 해당",
+        "금속문화재를 의례·장신구뿐 아니라 기술·병기로도 읽게 함"
+      ],
+      surface: [
+        "청동 부식 생성물과 내부 그을음·잔류물이 남아 있을 수 있음",
+        "포구와 약실의 균열이 구조적 약점"
+      ],
+      conservation: [
+        "내부 공동의 습기와 오염을 관리",
+        "주조 균열의 진행 여부를 관찰",
+        "철제 화기와 같은 방식으로 처리하지 않음"
+      ],
+      sentence: "지자총통은 청동을 녹여 만든 원통이다. 금속의 주조성이 곧 화기의 형태가 되었다."
+    },
+    {
+      id: "bronze-mirror",
+      no: "13",
+      image: "./images/bronze-mirror.jpg",
+      metals: ["bronze"],
+      name: "청동 세문경",
+      era: "청동기시대",
+      period: "한국 청동기시대",
+      designation: "—",
+      origin: "—",
+      collection: "—",
+      material: "청동",
+      materialClass: "bronze",
+      materialLabel: "Cu",
+      use: "의례용 거울로 이해됨",
+      size: "—",
+      summary: "가는 기하문이 빽빽한 청동 거울. 반사면과 문양면이 한 장의 주조물이다.",
+      elements: {
+        primary: "구리계 합금(청동)",
+        alloy: "거울용 청동은 일반적으로 주석 함량이 높은 경우가 있으나, 이 유물의 실제 조성으로 단정하지 않음",
+        surface: "세문, 뉴(꼭지)",
+        analysis: "정확한 Cu-Sn 비율은 분석자료가 필요함"
+      },
+      properties: [
+        "주석이 많은 청동은 단단하고 연마했을 때 반사면을 만들기 쉬움(일반적 금속학 지식)",
+        "얇은 원판이라 깨짐과 휨에 주의",
+        "녹이 문양을 메우면 세문이 읽히지 않음"
+      ],
+      metallurgy: [
+        "거울은 청동의 색과 경도를 동시에 쓰는 기물",
+        "잔무늬는 주조와 표면 가공의 정밀도를 보여 줌"
+      ],
+      techniques: ["주조", "세문 표현"],
+      making: [
+        "거푸집에 문양을 새겨 얇은 원판으로 주조한 것으로 이해됨",
+        "세부 제작법은 유물별 조사가 필요함"
+      ],
+      background: [
+        "한국 청동기시대 의례·권위와 관련된 기물로 해석됨",
+        "일상 거울이라기보다 상징적 성격이 강하다고 보는 견해가 있음"
+      ],
+      surface: [
+        "녹색·갈색 부식 생성물이 흔함",
+        "세문이 부식에 가려질 수 있음"
+      ],
+      conservation: [
+        "문양을 드러내려 과도하게 깎지 않음",
+        "얇은 판의 균열을 우선 고정",
+        "습도와 염을 낮춰 부식 재발을 막음"
+      ],
+      sentence: "세문경은 청동을 거울로 만든 물건이다. 금속의 표면이 곧 무늬이자 빛이다."
+    },
+    {
+      id: "bronze-sword",
+      no: "14",
+      image: "./images/bronze-sword.jpg",
+      metals: ["bronze"],
+      name: "청동검",
+      era: "청동기시대",
+      period: "한국 청동기시대",
+      designation: "—",
+      origin: "—",
+      collection: "—",
+      material: "청동",
+      materialClass: "bronze",
+      materialLabel: "Cu",
+      use: "의례·권위를 겸한 무기",
+      size: "—",
+      summary: "주조로 만든 청동검. 철검과 달리 녹인 합금을 틀에 부어 날을 만든다.",
+      elements: {
+        primary: "구리계 합금(청동)",
+        alloy: "정확한 합금비는 이 유물의 분석자료가 없어 수치로 표기하지 않음",
+        surface: "주조 날, 등, 자루부",
+        analysis: "성분 추정값을 실제 조성처럼 쓰지 않음"
+      },
+      properties: [
+        "청동검은 주조로 형태를 한 번에 만들 수 있음",
+        "철보다 날의 강인함은 떨어질 수 있으나 의례 기물로 오래 남음",
+        "부식은 철과 다른 녹색·갈색 생성물을 만듦"
+      ],
+      metallurgy: [
+        "검의 형태는 거푸집과 합금의 유동성에 좌우됨",
+        "철기 시대 이전, 금속 무기 기술의 한 단계"
+      ],
+      techniques: ["주조"],
+      making: [
+        "거푸집에 청동을 부어 검신을 만든 것으로 이해됨",
+        "세부 형식(비파형·세형 등)은 개별 동정가 필요함"
+      ],
+      background: [
+        "청동기시대 지배층의 무기이자 의례 기물",
+        "철제 무기와 재료·제작·보존이 모두 다름"
+      ],
+      surface: [
+        "날에 부식층과 결손이 있을 수 있음",
+        "얇은 날 끝은 물리적 손상에 약함"
+      ],
+      conservation: [
+        "억지로 날을 세우거나 연마하지 않음",
+        "균열과 층상 박리를 안정화",
+        "철검 보존 처방을 그대로 적용하지 않음"
+      ],
+      sentence: "청동검은 두드려 늘인 철이 아니라, 녹여 부은 합금으로 만든 날이다."
+    },
+    {
+      id: "bronze-ssangnyeonggu",
+      no: "15",
+      image: "./images/bronze-ssangnyeonggu.jpg",
+      metals: ["bronze"],
+      name: "청동쌍령구",
+      era: "청동기시대",
+      period: "한국 청동기시대",
+      designation: "—",
+      origin: "—",
+      collection: "—",
+      material: "청동",
+      materialClass: "bronze",
+      materialLabel: "Cu",
+      use: "의례용 방울",
+      size: "—",
+      summary: "양쪽에 울림부가 있는 청동 방울. 금속을 속이 비게 주조해 소리를 만든다.",
+      elements: {
+        primary: "구리계 합금(청동)",
+        alloy: "정확한 조성은 분석자료가 필요함",
+        surface: "주조 표면, 중공 울림부",
+        analysis: "성분 수치는 표기하지 않음"
+      },
+      properties: [
+        "속이 빈 주조물이라 얇은 벽의 균열이 중요",
+        "청동의 탄성·두께가 소리와 관련될 수 있음",
+        "내부 흙·부식물이 남아 있을 수 있음"
+      ],
+      metallurgy: [
+        "성덕대왕신종과 원리는 같고 규모만 다르다. 금속으로 소리를 만든다",
+        "쌍령은 대칭 주조의 난이도를 보여 줌"
+      ],
+      techniques: ["중공 주조"],
+      making: [
+        "울림부를 중공으로 주조한 의례 방울로 이해됨",
+        "세부 제작법은 추가 분석이 필요함"
+      ],
+      background: [
+        "청동기 의례에서 쓰인 방울류",
+        "화순 대곡리 일괄 등 청동기 의례 세트와 함께 이해되는 기종"
+      ],
+      surface: [
+        "녹이 문양과 접합부를 가릴 수 있음",
+        "중공 내부의 부식이 겉보다 진행될 수 있음"
+      ],
+      conservation: [
+        "흔들어 소리를 확인하려는 시도를 하지 않음",
+        "내부 공동의 안정과 얇은 벽 보호",
+        "습도 관리로 부식 재활성화를 막음"
+      ],
+      sentence: "작은 청동 방울도 종과 같다. 금속의 빈 공간이 소리를 만든다."
+    },
+    {
+      id: "bronze-pallyeonggu",
+      no: "16",
+      image: "./images/bronze-pallyeonggu.jpg",
+      metals: ["bronze"],
+      name: "청동팔령구",
+      era: "청동기시대",
+      period: "한국 청동기시대",
+      designation: "—",
+      origin: "—",
+      collection: "—",
+      material: "청동",
+      materialClass: "bronze",
+      materialLabel: "Cu",
+      use: "의례용 팔두령 계열 방울",
+      size: "—",
+      summary: "여러 개의 울림이 달린 청동 의례구. 한 번의 주조로 복잡한 입체 방울을 만든다.",
+      elements: {
+        primary: "구리계 합금(청동)",
+        alloy: "정확한 합금비는 분석자료가 없어 수치로 쓰지 않음",
+        surface: "방사형 울림부",
+        analysis: "성분 추정값을 사용하지 않음"
+      },
+      properties: [
+        "돌출된 울림부가 많아 충격에 약함",
+        "얇은 주조벽과 연결 목 부분이 취약",
+        "청동 부식이 세부에 먼저 쌓임"
+      ],
+      metallurgy: [
+        "복잡한 중공 형태는 청동 주조 기술을 전제로 함",
+        "의례 기물의 형태가 금속 가공의 한계를 보여 줌"
+      ],
+      techniques: ["주조"],
+      making: [
+        "팔방향으로 울림부를 배치한 주조 의례구로 이해됨",
+        "세부 제작법은 유물 동정과 함께 검토해야 함"
+      ],
+      background: [
+        "한국 청동기 의례용 방울의 한 형식",
+        "청동 세문경·검과 함께 출토되는 경우가 있음"
+      ],
+      surface: [
+        "각 울림부의 깨짐·결손을 따로 관찰해야 함",
+        "녹이 형태를 뭉개 보일 수 있음"
+      ],
+      conservation: [
+        "개별 울림부가 꺾이지 않게 지지",
+        "소리를 내기 위한 조작을 하지 않음",
+        "철제 유물과 다른 청동 부식 처방을 적용"
+      ],
+      sentence: "팔령구는 청동을 여러 개의 빈 공간으로 나누어 만든 의례 금속이다."
+    },
+    {
+      id: "hwasun-daegok",
+      no: "17",
+      image: "./images/hwasun-daegok.jpg",
+      metals: ["bronze"],
+      name: "화순 대곡리 청동기 일괄",
+      era: "청동기시대",
+      period: "한국 청동기시대",
+      designation: "국보",
+      origin: "전남 화순 대곡리",
+      collection: "국립광주박물관",
+      material: "청동",
+      materialClass: "bronze",
+      materialLabel: "Cu",
+      use: "의례 일괄",
+      size: "일괄",
+      summary: "검, 거울, 방울 등이 함께 나온 청동기 일괄. 한 세트의 의례 금속이 재료의 쓰임을 보여 준다.",
+      elements: {
+        primary: "구리계 합금(청동)",
+        alloy: "기종마다 조성이 다를 수 있으므로, 일괄 전체를 하나의 비율로 단정하지 않음",
+        surface: "검·거울·방울 등 기종별 표면",
+        analysis: "개별 유물의 분석값이 확인된 경우에만 수치를 표기함"
+      },
+      properties: [
+        "같은 청동이라도 검·거울·방울은 두께와 기능이 다름",
+        "일괄 출토는 의례 세트의 구성을 알려 줌",
+        "부식 상태도 기종별로 다를 수 있음"
+      ],
+      metallurgy: [
+        "한 재료로 무기, 거울, 소리를 내는 기물을 함께 만들었다",
+        "청동기 사회에서 금속이 의례의 중심이었음을 보여 줌"
+      ],
+      techniques: ["주조"],
+      making: [
+        "여러 기종을 각각 주조해 한 세트로 묻은 것으로 이해됨",
+        "제작 공방과 합금비는 기종별 분석이 필요함"
+      ],
+      background: [
+        "화순 대곡리에서 출토된 청동기 일괄",
+        "한국 청동기 의례 연구의 중요 자료"
+      ],
+      surface: [
+        "기종마다 녹의 색과 두께가 다를 수 있음",
+        "얇은 거울과 검 날이 특히 취약"
+      ],
+      conservation: [
+        "일괄을 한 점에 묶어 동일한 처리로 단정하지 않음",
+        "검·거울·방울의 구조적 약점을 따로 평가",
+        "출토 염과 습기를 기준으로 안정화"
+      ],
+      sentence: "대곡리 일괄은 청동 하나로 검과 거울과 방울을 만든 세계다."
     }
   ]
 };
