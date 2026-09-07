@@ -20,6 +20,7 @@
       <img class="hero-shot" src="${item.image}" alt="${item.name}" />
       <div>
         <div class="metal">${item.no} · ${item.metals.map((m) => METAL_LABEL[m]).join(" · ")} · ${item.materialLabel}</div>
+        <a class="back" href="./index.html">← 목록으로</a>
         ${heading}
         <p class="sentence">${item.sentence}</p>
         <dl class="facts">
@@ -70,7 +71,7 @@
     masonry.innerHTML = listItems
       .map(
         (item) => `
-      <a class="tile" href="./artifact.html?id=${item.id}" target="_blank" rel="noopener">
+      <a class="tile" href="./artifact.html?id=${item.id}">
         <img src="${item.image}" alt="${item.name}" />
       </a>`
       )
