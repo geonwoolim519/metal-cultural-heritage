@@ -37,12 +37,13 @@ img { display: block; max-width: 100%; }
   display: flex;
   align-items: center;
   gap: 10px;
-  min-width: 240px;
+  min-width: 220px;
 }
 .mark {
-  width: 34px;
-  height: 34px;
+  width: auto;
+  height: 46px;
   flex: none;
+  object-fit: contain;
 }
 .brand-text {
   display: flex;
@@ -50,8 +51,8 @@ img { display: block; max-width: 100%; }
   line-height: 1.2;
 }
 .brand-text b {
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: 700;
   letter-spacing: 0.02em;
 }
 .brand-text small {

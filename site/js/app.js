@@ -47,7 +47,7 @@
   if (detail) {
     const id = new URLSearchParams(location.search).get("id");
     const item = items.find((x) => x.id === id) || items[0];
-    document.title = `${item.name} · 금속문화재`;
+    document.title = `${item.name} · 금속문화재박물관`;
     detail.innerHTML = articleHtml(item, `<h1>${item.name}</h1>`);
     return;
   }
