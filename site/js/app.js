@@ -56,7 +56,7 @@
 
   const titleEl = document.querySelector("[data-gallery-title]");
   const countEl = document.querySelector("[data-gallery-count]");
-  const navButtons = [...document.querySelectorAll(".nav [data-metal]")];
+  const metalControls = [...document.querySelectorAll("[data-metal]")];
   let metal = new URLSearchParams(location.search).get("metal") || "";
 
   function filtered() {
@@ -78,19 +78,20 @@
       .join("");
   }
 
-  navButtons.forEach((btn) => {
-    if (btn.dataset.metal === metal) {
-      navButtons.forEach((b) => b.classList.remove("is-on"));
-      btn.classList.add("is-on");
-    }
+  function markMetal() {
+    metalControls.forEach((b) => b.classList.toggle("is-on", b.dataset.metal === metal));
+  }
+
+  metalControls.forEach((btn) => {
     btn.addEventListener("click", () => {
       metal = btn.dataset.metal;
-      navButtons.forEach((b) => b.classList.toggle("is-on", b === btn));
+      markMetal();
       document.getElementById("home").classList.toggle("is-away", Boolean(metal));
       renderGallery();
-      window.scrollTo({ top: metal ? 0 : 0, behavior: metal ? "auto" : "smooth" });
+      window.scrollTo({ top: 0, behavior: metal ? "auto" : "smooth" });
     });
   });
+  markMetal();
 
   if (metal) {
     document.getElementById("home").classList.add("is-away");
