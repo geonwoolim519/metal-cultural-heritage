@@ -2,7 +2,16 @@
 <html lang="ko">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="금속문화재" />
+    <meta name="application-name" content="금속문화재" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/icon-192.png" />
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
     <title>금속의 성질 · 금속문화재박물관</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +27,7 @@
           <small>METAL HERITAGE MUSEUM</small>
         </span>
       </a>
-      <nav class="nav">
+      <nav class="nav" id="site-nav">
         <a href="./index.html">홈</a>
         <a class="is-on" href="./properties.html">금속의 성질</a>
         <a href="./index.html?metal=gold">금</a>
@@ -27,6 +36,9 @@
         <a href="./index.html?metal=silver">은</a>
         <a href="./index.html?metal=iron">철</a>
       </nav>
+      <button class="menu-btn" type="button" data-menu aria-controls="site-nav" aria-expanded="false" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
     </header>
 
     <main class="props">
@@ -113,5 +125,6 @@
 
       <p class="note">원소 함량·합금비·경도 수치는 해당 유물의 과학적 분석자료가 확인된 경우에만 표기합니다. 이 페이지의 설명은 문화재재료학에서 쓰는 일반적인 금속 성질입니다.</p>
     </main>
+    <script src="./js/nav.js"></script>
   </body>
 </html>
