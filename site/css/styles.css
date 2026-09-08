@@ -249,11 +249,21 @@ img { display: block; max-width: 100%; }
   font-size: 12px;
   letter-spacing: 0.14em;
 }
+.detail-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
 .back {
-  display: inline-block;
-  margin: 10px 0 4px;
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  padding: 6px 0 6px 12px;
   color: var(--muted);
   font-size: 13px;
+  white-space: nowrap;
+  flex: none;
 }
 .back:hover { color: var(--blue); }
 .detail h1 {
@@ -275,7 +285,7 @@ img { display: block; max-width: 100%; }
 }
 .facts div {
   display: grid;
-  grid-template-columns: 72px 1fr;
+  grid-template-columns: 84px 1fr;
   gap: 8px;
   font-size: 13px;
   border-bottom: 1px solid var(--line);
@@ -471,6 +481,11 @@ img { display: block; max-width: 100%; }
     position: relative;
     top: 0;
     max-height: 52vh;
+  }
+  .back {
+    min-height: 44px;
+    padding: 10px 0 10px 8px;
+    font-size: 15px;
   }
   .props { width: min(1100px, 94vw); padding-left: 0; padding-right: 0; }
   .metal-five, .mech-grid { grid-template-columns: 1fr; }

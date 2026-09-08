@@ -36,13 +36,15 @@
     return `
       <img class="hero-shot" src="${item.image}" alt="${item.name}" />
       <div>
-        <div class="metal">${item.no} · ${item.metals.map((m) => METAL_LABEL[m]).join(" · ")} · ${item.materialLabel}</div>
-        <a class="back" href="${listHref(item)}">← 목록으로</a>
+        <div class="detail-top">
+          <div class="metal">${item.no} · ${item.metals.map((m) => METAL_LABEL[m]).join(" · ")} · ${item.materialLabel}</div>
+          <a class="back" href="${listHref(item)}">← 목록으로</a>
+        </div>
         ${heading}
         <p class="sentence">${item.sentence}</p>
         <dl class="facts">
           <div><dt>시대</dt><dd>${item.era} · ${item.period}</dd></div>
-          <div><dt>재질</dt><dd>${item.material}</dd></div>
+          <div><dt>영문명</dt><dd>${item.englishName}</dd></div>
           <div><dt>지정</dt><dd>${item.designation}</dd></div>
           <div><dt>출토</dt><dd>${item.origin}</dd></div>
           <div><dt>소장</dt><dd>${item.collection}</dd></div>
