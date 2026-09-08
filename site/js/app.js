@@ -12,7 +12,14 @@
   const detail = document.querySelector("[data-detail]");
 
   function bullets(arr) {
-    return `<ul>${arr.map((x) => `<li>${x}</li>`).join("")}</ul>`;
+    const seen = new Set();
+    const lines = arr.filter((line) => {
+      const key = String(line || "").replace(/\s+/g, " ").trim();
+      if (!key || seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+    return `<ul>${lines.map((x) => `<li>${x}</li>`).join("")}</ul>`;
   }
 
   function listHref(item) {
@@ -42,13 +49,17 @@
           <div><dt>크기</dt><dd>${item.size}</dd></div>
           <div><dt>용도</dt><dd>${item.use}</dd></div>
         </dl>
-        <div class="block"><h4>금속 원소</h4><p>${item.elements.primary}</p><p>${item.elements.alloy}</p><p>${item.elements.surface}</p><p>${item.elements.analysis}</p></div>
-        <div class="block"><h4>금속의 성질</h4>${bullets(item.properties)}</div>
-        <div class="block"><h4>금속학적 특징</h4>${bullets(item.metallurgy)}</div>
+        <div class="block"><h4>금속학적 특징</h4>${bullets([
+          item.elements.primary,
+          item.elements.alloy,
+          item.elements.surface,
+          item.elements.analysis,
+          ...item.properties,
+          ...item.metallurgy
+        ])}</div>
         <div class="block"><h4>제작기법</h4><p>${item.techniques.join(" · ")}</p>${bullets(item.making)}</div>
-        <div class="block"><h4>제작 배경</h4>${bullets(item.background)}</div>
-        <div class="block"><h4>표면과 부식</h4>${bullets(item.surface)}</div>
-        <div class="block"><h4>보존과학</h4>${bullets(item.conservation)}</div>
+        <div class="block"><h4>제작배경</h4>${bullets(item.background)}</div>
+        <div class="block"><h4>보존과학</h4>${bullets([...item.surface, ...item.conservation])}</div>
         <p class="note">${window.EXHIBITION.reliability}</p>
       </div>
     `;
@@ -78,6 +89,7 @@
     const listItems = filtered();
     titleEl.textContent = metal ? METAL_LABEL[metal] : "전체";
     countEl.textContent = `${listItems.length}점`;
+    masonry.classList.toggle("is-stack", Boolean(metal));
     masonry.innerHTML = listItems
       .map(
         (item) => `
