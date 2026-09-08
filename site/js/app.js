@@ -15,12 +15,22 @@
     return `<ul>${arr.map((x) => `<li>${x}</li>`).join("")}</ul>`;
   }
 
+  function listHref(item) {
+    const from = new URLSearchParams(location.search).get("from");
+    const allowed = Object.keys(METAL_LABEL);
+    const metal =
+      from && allowed.includes(from) && item.metals.includes(from)
+        ? from
+        : item.metals[0];
+    return metal ? `./index.html?metal=${metal}` : "./index.html";
+  }
+
   function articleHtml(item, heading) {
     return `
       <img class="hero-shot" src="${item.image}" alt="${item.name}" />
       <div>
         <div class="metal">${item.no} · ${item.metals.map((m) => METAL_LABEL[m]).join(" · ")} · ${item.materialLabel}</div>
-        <a class="back" href="./index.html">← 목록으로</a>
+        <a class="back" href="${listHref(item)}">← 목록으로</a>
         ${heading}
         <p class="sentence">${item.sentence}</p>
         <dl class="facts">
@@ -71,7 +81,7 @@
     masonry.innerHTML = listItems
       .map(
         (item) => `
-      <a class="tile" href="./artifact.html?id=${item.id}">
+      <a class="tile" href="./artifact.html?id=${item.id}${metal ? `&from=${metal}` : ""}">
         <img src="${item.image}" alt="${item.name}" />
       </a>`
       )
