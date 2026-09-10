@@ -1,6 +1,6 @@
 {
   "name": "금속문화재박물관",
-  "short_name": "금속문화재",
+  "short_name": "금속문화재박물관",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#000000",
