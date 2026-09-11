@@ -32,9 +32,13 @@
     return metal ? `./index.html?metal=${metal}` : "./index.html";
   }
 
+  function thumbSrc(src) {
+    return String(src || "").replace("./images/", "./images/thumbs/");
+  }
+
   function articleHtml(item, heading) {
     return `
-      <img class="hero-shot" src="${item.image}" alt="${item.name}" />
+      <img class="hero-shot" src="${item.image}" alt="${item.name}" decoding="async" fetchpriority="high" />
       <div>
         <div class="detail-top">
           <div class="metal">${item.no} · ${item.metals.map((m) => METAL_LABEL[m]).join(" · ")} · ${item.materialLabel}</div>
@@ -94,9 +98,9 @@
     masonry.classList.toggle("is-stack", Boolean(metal));
     masonry.innerHTML = listItems
       .map(
-        (item) => `
+        (item, i) => `
       <a class="tile" href="./artifact.html?id=${item.id}${metal ? `&from=${metal}` : ""}">
-        <img src="${item.image}" alt="${item.name}" />
+        <img src="${thumbSrc(item.image)}" alt="${item.name}" loading="${i < 8 ? "eager" : "lazy"}" decoding="async"${i < 4 ? ' fetchpriority="high"' : ""} />
       </a>`
       )
       .join("");

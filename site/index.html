@@ -15,13 +15,13 @@
     <title>금속문화재박물관</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
       <a class="brand" href="./index.html">
-        <img class="mark" src="./images/logo.png" alt="금속문화재박물관" />
+        <img class="mark" src="./images/logo-mark.png" alt="금속문화재박물관" />
         <span class="brand-text">
           <b>금속문화재박물관</b>
           <small>METAL HERITAGE MUSEUM</small>
@@ -42,7 +42,7 @@
     </header>
 
     <section class="hero" id="home">
-      <img class="hero-photo" src="./images/forge-hero.jpg" alt="" />
+      <img class="hero-photo" src="./images/forge-hero.jpg" alt="" decoding="async" fetchpriority="high" />
       <div class="hero-shade"></div>
       <div class="hero-inner">
         <p class="kicker">금속문화재박물관</p>
@@ -61,6 +61,10 @@
         <div class="masonry" data-masonry></div>
       </div>
     </section>
+
+    <footer class="site-credit">
+      유물 사진은 <a href="https://www.heritage.go.kr/" target="_blank" rel="noopener noreferrer">국가유산청 국가유산포털</a>에서 가져왔습니다.
+    </footer>
 
     <script src="./js/data.js"></script>
     <script src="./js/nav.js"></script>
